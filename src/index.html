@@ -1,18 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html class="min-h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/helvetica-neue-55"
       rel="stylesheet"
     />
     <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/4c2e22d27d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body class="bg-slate-600">
-    <header class="h-[95px] w-full">
+  <body class="min-h-full">
+    <header class="h-[95px] w-full absolute">
       <nav class="h-full w-full p-5 flex justify-between items-center">
         <svg
           id="Layer_2"
@@ -30,7 +43,7 @@
           </g>
         </svg>
         <a
-          class="block h-[44px] px-5 rounded-full leading-[44px] font-sora font-bold bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white"
+          class="block h-[44px] px-6 rounded-full leading-[44px] font-sora font-bold bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white"
           href=""
           >Hire Me!</a
         >
@@ -42,17 +55,114 @@
           <span class="block h-[3px] w-3/6 bg-white"></span>
         </div>
         <ul
-          class="nav-menu absolute top-0 left-0 w-full h-[100%] p-5 mt-[95px] text-white font-sora bg-slate-300"
+          class="nav-menu absolute z-10 overflow-hidden transition-[height] duration-500 ease-in-out top-0 left-0 w-full h-0 mt-[95px] text-white font-sora bg-slate-300 box-border"
         >
-          <li class="py-4 text-2xl">HOME</li>
-          <li class="py-4 text-2xl">ABOUT</li>
-          <li class="py-4 text-2xl">SERVICES</li>
-          <li class="py-4 text-2xl">PORTFOLIOS</li>
-          <li class="py-4 text-2xl">BLOG</li>
-          <li class="py-4 text-2xl">CONTACT</li>
+          <li class="py-4 px-5 text-2xl">HOME</li>
+          <li class="py-4 px-5 text-2xl">ABOUT</li>
+          <li class="py-4 px-5 text-2xl">SERVICES</li>
+          <li class="py-4 px-5 text-2xl">PORTFOLIOS</li>
+          <li class="py-4 px-5 text-2xl">BLOG</li>
+          <li class="py-4 px-5 text-2xl">CONTACT</li>
         </ul>
       </nav>
     </header>
+    <main class="h-full">
+      <section class="hero bg-radial min-h-full p-5">
+        <p
+          class="text-white font-sora text-[#ddddd] text-2xl font-bold mt-[100px]"
+        >
+          I am Rizal
+        </p>
+        <h1
+          class="font-sora bg-gradient-to-r from-[#8750f7] to-white bg-clip-text text-transparent text-3xl font-bold"
+        >
+          Web Developer + Graphic Designer
+        </h1>
+        <img
+          src="./profile.jpg"
+          alt=""
+          class="max-w-[80%] object-cover rounded-3xl my-7 rotate-3 border-2 border-[#2a1454] mx-auto"
+        />
+        <p class="text-[#dddddd] font-sora text-xl font-light">
+          I break down complex user experinece problems to create integritiy
+          focussed solutions that connect billions of people
+        </p>
+        <button
+          class="text-[#8750f7] font-bold font-sora h-11 px-6 border-[1px] border-[#8750f7] rounded-full my-5"
+        >
+          Download CV <i class="fa-solid fa-download ml-1"></i>
+        </button>
+        <div class="flex flex-row gap-x-3">
+          <a
+            href=""
+            class="text-[#8750f7] w-8 h-8 rounded-full border-[1px] border-[#8750f7] flex items-center justify-center"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a
+            href=""
+            class="text-[#8750f7] w-8 h-8 rounded-full border-[1px] border-[#8750f7] flex items-center justify-center"
+            ><i class="fa-brands fa-dribbble"></i
+          ></a>
+          <a
+            href=""
+            class="text-[#8750f7] w-8 h-8 rounded-full border-[1px] border-[#8750f7] flex items-center justify-center"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            href=""
+            class="text-[#8750f7] w-8 h-8 rounded-full border-[1px] border-[#8750f7] flex items-center justify-center"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+        <div class="w-full flex-1 my-10 flex flex-wrap gap-x-3 gap-y-5">
+          <div class="flex flex-col flex-1 w-3/6 justify-center items-center gap-y-2">
+            <p class="text-[#dddddd] font-onest text-5xl leading-[48px] font-bold">
+              14
+            </p>
+            <p class="text-[#dddddd] font-sora text-center leading-snug">
+              Years Of <br />Experience
+            </p>
+          </div>
+          <div class="flex flex-col flex-1 w-3/6 justify-center items-center gap-y-2">
+            <p class="text-[#dddddd] font-onest text-5xl leading-[48px] font-bold">
+              50+
+            </p>
+            <p class="text-[#dddddd] font-sora text-center leading-snug">
+              Project <br />Completed
+            </p>
+          </div>
+          <div class="flex flex-col flex-1 w-3/6 justify-center items-center gap-y-2">
+            <p class="text-[#dddddd] font-onest text-5xl leading-[48px] font-bold">
+              1.5K
+            </p>
+            <p class="text-[#dddddd] font-sora text-center leading-snug">
+              Happy <br />Clients
+            </p>
+          </div>
+          <div class="flex flex-col w-3/6 justify-center items-center gap-y-2">
+            <p class="text-[#dddddd] font-onest text-5xl leading-[48px] font-bold">
+              14
+            </p>
+            <p class="text-[#dddddd] font-sora text-center leading-snug">
+              Years Of <br />Experience
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[#050709] w-full">
+        <h1 class="pt-9 px-5 bg-gradient-to-r from-[#8750f7] to-white bg-clip-text text-transparent font-sora font-bold text-2xl text-center">My Quality Services</h1>
+        <h2 class="text-[#dddddd] text-center font-sora mt-5 px-5">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</h2>
+        <div class="p-3">
+          <div class="px-4 py-5 bg-gradient-to-r from-[#8750f7] to-slate-500">
+            <div class="flex flex-row justify-between items-center">
+              <h1 class="text-[#dddddd] font-sora font-bold text-xl"><span class="pr-2">01</span> Branding Design</h1>
+              <i class="fa-solid fa-arrow-right text-[#dddddd] text-xl -rotate-45"></i>
+            </div>
+            <p class="text-[#dddddd] font-sora pt-5">I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="./index.js"></script>
   </body>
 </html>
