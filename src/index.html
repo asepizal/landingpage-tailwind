@@ -24,7 +24,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="min-h-full">
+  <body class="bg-[#050709]">
     <header class="h-[95px] w-full absolute">
       <nav class="h-full w-full p-5 flex justify-between items-center">
         <svg
@@ -43,7 +43,7 @@
           </g>
         </svg>
         <a
-          class="block h-[44px] px-6 rounded-full leading-[44px] font-sora font-bold bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white"
+          class="block h-[44px] px-6 rounded-full leading-[44px] font-sora font-bold bg-gradient-to-r from-violet-500 to-[#30185e] text-white"
           href=""
           >Hire Me!</a
         >
@@ -149,19 +149,63 @@
           </div>
         </div>
       </section>
-      <section class="bg-[#050709] w-full">
+      <section class="bg-[#050709] w-full pb-8">
         <h1 class="pt-9 px-5 bg-gradient-to-r from-[#8750f7] to-white bg-clip-text text-transparent font-sora font-bold text-2xl text-center">My Quality Services</h1>
         <h2 class="text-[#dddddd] text-center font-sora mt-5 px-5">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</h2>
-        <div class="p-3">
-          <div class="px-4 py-5 bg-gradient-to-r from-[#8750f7] to-slate-500">
+        <div class="p-3 mt-7">
+          <div class="px-4 py-5 bg-gradient-to-r from-[#8750f7] to-[#30185e] border-b border-[#2a1454]">
             <div class="flex flex-row justify-between items-center">
               <h1 class="text-[#dddddd] font-sora font-bold text-xl"><span class="pr-2">01</span> Branding Design</h1>
               <i class="fa-solid fa-arrow-right text-[#dddddd] text-xl -rotate-45"></i>
             </div>
             <p class="text-[#dddddd] font-sora pt-5">I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people</p>
           </div>
+          <div class="px-4 py-5 border-b border-[#2a1454]">
+            <div class="flex flex-row justify-between items-center">
+              <h1 class="text-[#dddddd] font-sora font-bold text-xl"><span class="pr-2 text-[#8750f7]">02</span> Web Design</h1>
+              <i class="fa-solid fa-arrow-right text-[#dddddd] text-xl rotate-45"></i>
+            </div>
+            <p class="text-[#dddddd] font-sora pt-5">I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people</p>
+          </div>
+          <div class="px-4 py-5 border-b border-[#2a1454]">
+            <div class="flex flex-row justify-between items-center">
+              <h1 class="text-[#dddddd] font-sora font-bold text-xl"><span class="pr-2 text-[#8750f7]">03</span> UI/UX Design</h1>
+              <i class="fa-solid fa-arrow-right text-[#dddddd] text-xl rotate-45"></i>
+            </div>
+            <p class="text-[#dddddd] font-sora pt-5">I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people</p>
+          </div>
+          <div class="px-4 py-5 border-b border-[#2a1454]">
+            <div class="flex flex-row justify-between items-center">
+              <h1 class="text-[#dddddd] font-sora font-bold text-xl"><span class="pr-2 text-[#8750f7]">04</span> Graphic Design</h1>
+              <i class="fa-solid fa-arrow-right text-[#dddddd] text-xl rotate-45"></i>
+            </div>
+            <p class="text-[#dddddd] font-sora pt-5">I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people</p>
+          </div>
         </div>
       </section>
+      <section class="bg-[#0F0715] w-full">
+        <h1 class="pt-9 px-5 bg-gradient-to-r from-[#8750f7] to-white bg-clip-text text-transparent font-sora font-bold text-2xl text-center">My Recent Works</h1>
+        <h2 class="text-[#dddddd] text-center font-sora mt-5 px-5">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</h2>
+        <div class="w-[90%] h-11 bg-[#050709] flex flex-row mx-auto mt-5 rounded-full">
+          <div class="h-full flex justify-center items-center flex-grow">
+            <input type="radio" id="all" name="service" class="hidden peer/all">
+            <label for="all" class="transition-all duration-500 bg-[#050709] text-center h-full w-full px-2 rounded-full leading-[44px] font-sora text-[#dddddd] peer-checked/all:bg-gradient-to-r from-violet-500 to-[#30185e]">All</label>
+          </div>
+          <div class="h-full flex justify-center items-center flex-grow">
+            <input type="radio" id="ui" name="service" class="hidden peer/ui">
+            <label for="ui" class="text-center h-full w-full px-2 rounded-full leading-[44px] font-sora text-[#dddddd] peer-checked/ui:bg-gradient-to-r from-violet-500 to-[#30185e]">UI/UX</label>
+          </div>
+          <div class="h-full flex justify-center items-center flex-grow">
+            <input type="radio" id="branding" name="service" class="hidden peer/branding">
+            <label for="branding" class="text-center h-full w-full px-2 rounded-full leading-[44px] font-sora text-[#dddddd] peer-checked/branding:bg-gradient-to-r from-violet-500 to-[#30185e]">Branding</label>
+          </div>
+          <div class="h-full flex justify-center items-center flex-grow">
+            <input type="radio" id="apps" name="service" class="hidden peer/apps">
+            <label for="apps" class="text-center h-full w-full px-2 rounded-full leading-[44px] font-sora text-[#dddddd] peer-checked/apps:bg-gradient-to-r from-violet-500 to-[#30185e]">Apps</label>
+          </div>
+        </div>
+      </section>
+      <section class="h-screen bg-white">p</section>
     </main>
     <script src="./index.js"></script>
   </body>
